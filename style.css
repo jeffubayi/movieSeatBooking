@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 21, 53);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 20px;
+    font-family:'Lato',sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellowgreen;
+    margin-bottom: 40px;
+}
+.movie-container{
+    margin: 20px 0;
+}
+.movie-container select{
+    background-color: whitesmoke;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.container{
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+.seat {
+    background-color: #80a726;
+    height: 18px;
+    width: 20px;
+    margin: 5px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    
+
+}
+  
+.seat.selected {
+    background-color: #8c00ff;
+}
+  
+.seat.occupied {
+    background-color: rgb(245, 139, 0);
+}
+  
+.seat:nth-of-type(2) {
+    margin-right: 18px;
+}
+  
+.seat:nth-last-of-type(2) {
+    margin-left: 18px;
+}
+  
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 3px 10px rgba(200, 196, 202, 0.7);
+
+}
+  
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+  
+.showcase {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+  
+.showcase li small {
+    margin-left: 2px;
+}
+.btn {
+    border-radius: 10px;
+    background-color: rgb(0, 165, 36);
+    margin-bottom:10px;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 7px;
+    color:white
+}
+.btn :hover{
+    cursor: default;
+    transform:scale(1);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+  
+.row {
+    display: flex;
+}
+  
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+  
+p.text {
+    margin: 5px 0;
+}
+  
+p.text span {
+    color: #ffae00;
+}
+  

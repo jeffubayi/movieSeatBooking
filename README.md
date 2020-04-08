@@ -1,8 +1,10 @@
-## imTicket
-A vanilla JS app for booking showing movies and cinema seats.
-![](demo.png)
+### imTicket
 
-#Specifications
+A vanilla JS app for booking showing movies and cinema seats.
+
+               ![](demo.png)
+
+##Specifications
 
 - Display UI with movie showing, screen, seats & seat info
 - User can select a movie/price
